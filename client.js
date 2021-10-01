@@ -1,8 +1,8 @@
-import * as THREE from './build/three.module.js';
+import * as THREE from '../build/three.module.js';
 // console.log(THREE);
-import { OrbitControls } from './jsm/controls/OrbitControls.js';
+import { OrbitControls } from '../jsm/controls/OrbitControls.js';
 // console.log(OrbitControls);
-import Stats from  './jsm/libs/stats.module.js';
+import Stats from  '../jsm/libs/stats.module.js';
 // console.log(Stats);
 
 let scene;
