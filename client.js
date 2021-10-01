@@ -1,8 +1,10 @@
-import * as THREE from '../build/three.module.js';
+// import * as THREE from '/build/three.module.js';
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.module.js';
 // console.log(THREE);
-import { OrbitControls } from '../jsm/controls/OrbitControls.js';
+// import { OrbitControls } from '/jsm/controls/OrbitControls.js';
+import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/controls/OrbitControls.js';
 // console.log(OrbitControls);
-import Stats from  '../jsm/libs/stats.module.js';
+// import Stats from  '/jsm/libs/stats.module.js';
 // console.log(Stats);
 
 let scene;
@@ -43,12 +45,8 @@ const earthMaterial = new THREE.MeshPhongMaterial({
     bumpScale: 0.05
   
 });
-const earthDetail = new THREE.MeshPhongMaterial({
-    bumpMap: THREE.ImageUtils.loadTexture('texture/earthspec4k.jpg'),
-    bumpScale: 1
-});
 
-const earthMesh = new THREE.Mesh(earthGeometry, earthMaterial, earthDetail);
+const earthMesh = new THREE.Mesh(earthGeometry, earthMaterial);
 scene.add(earthMesh);
 
  // Clouds
