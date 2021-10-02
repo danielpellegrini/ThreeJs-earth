@@ -42,8 +42,8 @@ const earthGeometry = new THREE.SphereGeometry(0.6, 200, 200);
 const earthMaterial = new THREE.MeshPhongMaterial({
     roughness: 0.009,
     metalness: 0.009,
-    map: THREE.ImageUtils.loadTexture('texture/earthmap4k.jpg'),
-    bumpMap: THREE.ImageUtils.loadTexture('texture/earthbump4k.jpg'),
+    map: THREE.ImageUtils.loadTexture('texture/earthmap1k.jpg'),
+    bumpMap: THREE.ImageUtils.loadTexture('texture/earthbump.jpg'),
     bumpScale: 0.05
   
 });
@@ -54,7 +54,7 @@ scene.add(earthMesh);
  // Clouds
 const cloudGeometry = new THREE.SphereGeometry(0.62, 200, 200);
 const cloudMaterial = new THREE.MeshPhongMaterial({
-    map: THREE.ImageUtils.loadTexture('texture/earthCloud.png'),
+    map: THREE.ImageUtils.loadTexture('texture/earthCloud1k.png'),
     transparent: true,
 });
 
